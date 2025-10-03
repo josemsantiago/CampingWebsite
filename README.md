@@ -1,6 +1,17 @@
 # NuCamp - Camping Website
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?logo=sass&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.2.3-7952B3?logo=bootstrap)
+![Parcel](https://img.shields.io/badge/Parcel-2.9.3-E9AB4F)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Status](https://img.shields.io/badge/status-active-success)
+
 A responsive camping website featuring campsite information, weather integration, and reservation system. Built with modern web technologies including SCSS, Parcel, and OpenWeather API.
+
+## Screenshots
+
+> **Note:** Website screenshots will be added soon. Run `npm start` and open http://localhost:1234 to see the site in action.
 
 ## Overview
 
@@ -167,6 +178,68 @@ This project demonstrates:
 - SCSS preprocessing and organization
 - Bootstrap framework usage
 - JavaScript ES6+ features
+
+## Screenshots
+
+> **Note:** Screenshots will be added soon. To see the website in action, follow the installation instructions above and run `npm start` to launch the development server at http://localhost:1234.
+
+## Troubleshooting
+
+### Common Issues
+
+**Issue:** OpenWeather API returns authentication error
+
+**Solution:** Verify your `.env` file contains a valid `OPENWEATHER_API_KEY`. You can obtain a free API key at https://openweathermap.org/api
+
+---
+
+**Issue:** Build fails with "Module not found" error
+
+**Solution:** Delete `node_modules` and `.parcel-cache` folders, then run `npm install` again. Ensure you're using Node.js 14+ and npm 6+.
+
+---
+
+**Issue:** Images not displaying correctly
+
+**Solution:** Verify that all image files are present in the `img/` directory. Check that image paths in HTML files are relative paths (e.g., `./img/logo.png`).
+
+---
+
+**Issue:** Form submissions not working
+
+**Solution:** Check browser console for errors. Ensure the NuCamp Form API endpoint is accessible. Test your internet connection.
+
+---
+
+**Issue:** Weather widget shows "Error loading weather data"
+
+**Solution:** Confirm API key is valid and not rate-limited. OpenWeather free tier allows 60 calls/minute and 1,000,000 calls/month.
+
+For additional help, please open an issue on the GitHub repository or check the [Parcel documentation](https://parceljs.org/docs/).
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add YourFeature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a Pull Request
+
+**Code Style Guidelines:**
+- Follow consistent indentation (2 spaces for HTML/CSS/JS)
+- Use semantic HTML5 elements
+- Organize SCSS files with modular components
+- Comment complex JavaScript logic
+- Test responsive design on mobile and desktop
+
+## Contact & Support
+
+- **Author**: José Santiago Echevarria
+- **Issues**: Report bugs or request features via [GitHub Issues](https://github.com/josemsantiago/CampingWebsite/issues)
+- **Project Type**: Educational web development project demonstrating modern frontend technologies and API integration
+- **Learning Resources**: This project demonstrates NuCamp Full Stack Bootcamp concepts including Bootstrap 5, SCSS preprocessing, and RESTful API integration
 
 ## Author
 
